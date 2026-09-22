@@ -6,20 +6,6 @@
 TIPOS_PERMITIDOS = ["matrícula", "pagos", "constancia", "plataforma", "otro"]
 
 
-def mostrar_menu():
-    """Función sin retorno (Req. 4): Muestra el menú de opciones principales."""
-    print("\n" + "=" * 45)
-    print("   SISTEMA DE SOPORTE ACADÉMICO - MENÚ")
-    print("=" * 45)
-    print("1. Registrar nueva solicitud de atención")
-    print("2. Ver resumen de solicitudes registradas")
-    print("3. Salir")
-    print("=" * 45)
-
-
-def validar_texto_obligatorio(texto: str) -> bool:
-    """Función con retorno (Req. 6): Valida que una cadena no esté vacía."""
-    return len(texto.strip()) > 0
 
 
 def validar_codigo(codigo: str, min_longitud: int = 4) -> bool:
